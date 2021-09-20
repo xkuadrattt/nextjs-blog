@@ -15,6 +15,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  const url = "https://casualreview0.blogspot.com/";
   return (
     <Layout home>
       <Head>
@@ -42,6 +43,17 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+        <Link href={url}>
+          <a>Cara buat blog mudah</a>
+        </Link>
+        <br />
+        <Link href={url}>
+          <a>Frontend developer tutorial</a>
+        </Link>
+        <br />
+        <Link href={url}>
+          <a>penghasilan di internet</a>
+        </Link>
       </section>
     </Layout>
   );
